@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="#">
+        <h1>Tipos de inputs HTML5</h1>
+        <fieldset>
+            <legend>Identificação de acesso</legend>
+            <div class="row">
+                <div class="campo">
+                    <label for="nome">Nome: (Text)</label>
+                    <input type="text" name="nome" id="" placeholder="Nome completo" required>
+                </div>
+                <div classe="campo">
+                    <label for="senha">Senha (password)</label>
+                    <input type="password" name="senha" id="" placeholder="sua senha" required>
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail (email)</label>
+                    <input type="email" name="email" id="" placeholder="seuemail@gmail.com.br">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dados quantitativos</legend>
+            <div classe="row">
+                <div classe="campo">
+                    <label for="idade">Idade (number)</label>
+                    <input type="number" name="idade" id="" min="10" max="100" value="18">
+                </div>
+                <div class="campo">
+                    <label for="volume">Volume (range)</label>
+                    <input type="range" name="volume" id="" min="0" max="100">
+                </dip>
+                <div class="campo">
+                    <label for="cor">Tema de cor (color)</label>
+                    <input type="color" name="cor tema" id="" value="#3498db">
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Agendamentos</legend>
+            <div class="row">
+                <div class="campo">
+                    <label for="data">dia (date)</label>
+                    <input type="date" name="data" id="" required>
+                </div>
+                <div class="campo">
+                    <label for="hora">hora (time)</label>
+                    <input type="time" name="hora" id="" required>
+                </div>
+                <div class="campo">
+                    <label for="semana">semana (week)</label>
+                    <input type="week" name="semana" id="" required>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Preferência</legend>
+            <div class="row">
+                <div class="campo">
+                    <p>Você está bem?<br></p>
+                    <label for="pergunta">sim</label>
+                    <input type="checkbox" name="pergunta" id="">
+                    <label for="pergunta">não</label>
+                    <input type="checkbox" name="pergunta" id="">
+                </div>
+                <div class="campo">
+                    <label for="radio">radio (radio)</label>
+                    <input type="radio" name="radio" id="" required>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Enviar arquivos</legend>
+            <div class=row>
+                <div class="campo">
+                    <label for="arquivo">arquivo (file)</label>
+                    <input type="file" name="arquivo" id="" required>
+                </div>
+                <div class="campo">
+                    <label for="link">Link (url)</label>
+                    <input type="url" name="link" id="" required>
+                </div>
+                <div class="campo">
+                    <label for="areaTexto">Área de texto (textarea)</label>
+                    <input type="textarea" name="areaTexto" id="" required>
+                </div>
+            </div>
+        </fieldset>
+        <!--Agendamentos - data, hora, semana
+        Preferência - checkbox, radio
+        Enviar arquivos - file, url, textarea-->
+    </form>
+</body>
+</html>
