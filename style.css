@@ -1,0 +1,116 @@
+/* Importando uma fonte moderna do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap');
+
+/* Reset básico para remover margens padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Estilização do container do Formulário */
+form {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2c3e50;
+}
+
+/* Estilização dos grupos (Fieldsets) */
+fieldset {
+    border: 2px solid #e0e6ed;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #fafbfc;
+}
+
+legend {
+    background-color: #3498db;
+    color: white;
+    padding: 6px 16px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.9em;
+    letter-spacing: 0.5px;
+}
+
+/* Flexbox para colocar os campos lado a lado */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens quebrem linha em telas menores */
+    gap: 15px;       /* Espaço entre as colunas */
+}
+
+/* Estilo de cada bloco de campo (Label + Input) */
+.campo {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 200px; /* O campo cresce e encolhe, com tamanho base de 200px */
+}
+
+.campo label {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 0.85em;
+    color: #555;
+}
+
+/* Estilização geral dos Inputs */
+.campo input,
+.campo textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+/* Efeito ao clicar/focar no input */
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* Ajustes específicos para inputs que não precisam do estilo padrão */
+.campo input[type="color"] {
+    padding: 0;
+    height: 42px;
+    cursor: pointer;
+}
+
+.campo input[type="checkbox"],
+.campo input[type="radio"] {
+    width: auto;
+    margin-top: 5px;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* Estilo para parágrafos dentro de .campo (ex: "Você está bem?") */
+.campo p {
+    font-weight: 600;
+    font-size: 0.85em;
+    color: #555;
+    margin-bottom: 8px;
+}
