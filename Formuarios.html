@@ -1,100 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="#">
         <h1>Tipos de inputs HTML5</h1>
+        
         <fieldset>
             <legend>Identificação de acesso</legend>
             <div class="row">
                 <div class="campo">
                     <label for="nome">Nome: (Text)</label>
-                    <input type="text" name="nome" id="" placeholder="Nome completo" required>
+                    <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
                 </div>
-                <div classe="campo">
+                <div class="campo">
                     <label for="senha">Senha (password)</label>
-                    <input type="password" name="senha" id="" placeholder="sua senha" required>
+                    <input type="password" name="senha" id="senha" placeholder="sua senha" required>
                 </div>
                 <div class="campo">
                     <label for="email">E-mail (email)</label>
-                    <input type="email" name="email" id="" placeholder="seuemail@gmail.com.br">
+                    <input type="email" name="email" id="email" placeholder="seuemail@gmail.com.br">
                 </div>
             </div>
         </fieldset>
+
         <fieldset>
             <legend>Dados quantitativos</legend>
-            <div classe="row">
-                <div classe="campo">
+            <div class="row">
+                <div class="campo">
                     <label for="idade">Idade (number)</label>
-                    <input type="number" name="idade" id="" min="10" max="100" value="18">
+                    <input type="number" name="idade" id="idade" min="10" max="100" value="18">
                 </div>
                 <div class="campo">
                     <label for="volume">Volume (range)</label>
-                    <input type="range" name="volume" id="" min="0" max="100">
-                </dip>
-                <div class="campo">
+                    <input type="range" name="volume" id="volume" min="0" max="100">
+                </div> <div class="campo">
                     <label for="cor">Tema de cor (color)</label>
-                    <input type="color" name="cor tema" id="" value="#3498db">
+                    <input type="color" name="corTema" id="cor" value="#3498db">
                 </div>
             </div>
         </fieldset>
+
         <fieldset>
             <legend>Agendamentos</legend>
             <div class="row">
                 <div class="campo">
                     <label for="data">dia (date)</label>
-                    <input type="date" name="data" id="" required>
+                    <input type="date" name="data" id="data" required>
                 </div>
                 <div class="campo">
                     <label for="hora">hora (time)</label>
-                    <input type="time" name="hora" id="" required>
+                    <input type="time" name="hora" id="hora" required>
                 </div>
                 <div class="campo">
                     <label for="semana">semana (week)</label>
-                    <input type="week" name="semana" id="" required>
+                    <input type="week" name="semana" id="semana" required>
                 </div>
             </div>
         </fieldset>
+
         <fieldset>
             <legend>Preferência</legend>
             <div class="row">
                 <div class="campo">
                     <p>Você está bem?<br></p>
-                    <label for="pergunta">sim</label>
-                    <input type="checkbox" name="pergunta" id="">
-                    <label for="pergunta">não</label>
-                    <input type="checkbox" name="pergunta" id="">
+                    <label for="sim">sim</label>
+                    <input type="checkbox" name="pergunta" id="sim">
+                    <label for="nao">não</label>
+                    <input type="checkbox" name="pergunta" id="nao">
                 </div>
                 <div class="campo">
                     <label for="radio">radio (radio)</label>
-                    <input type="radio" name="radio" id="" required>
+                    <input type="radio" name="radio" id="radio" required>
                 </div>
             </div>
         </fieldset>
+
         <fieldset>
             <legend>Enviar arquivos</legend>
-            <div class=row>
+            <div class="row">
                 <div class="campo">
                     <label for="arquivo">arquivo (file)</label>
-                    <input type="file" name="arquivo" id="" required>
+                    <input type="file" name="arquivo" id="arquivo" required>
                 </div>
                 <div class="campo">
                     <label for="link">Link (url)</label>
-                    <input type="url" name="link" id="" required>
+                    <input type="url" name="link" id="link" required>
                 </div>
                 <div class="campo">
                     <label for="areaTexto">Área de texto (textarea)</label>
-                    <input type="textarea" name="areaTexto" id="" required>
+                    <textarea name="areaTexto" id="areaTexto" rows="4" required></textarea>
                 </div>
             </div>
         </fieldset>
-        <!--Agendamentos - data, hora, semana
-        Preferência - checkbox, radio
-        Enviar arquivos - file, url, textarea-->
     </form>
 </body>
 </html>
